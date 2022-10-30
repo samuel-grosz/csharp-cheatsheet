@@ -96,4 +96,15 @@ var list = new List<int> {1,2,3,4,5};
 foreach(int a in list) { Console.WriteLine(a); }
 ```
 
-# The Conditional/Tertiary Operator
+# ?: - The ternary conditional operator
+The operator evaluates a Boolean expression and returns the result of one of the two expressions, depending on whether the Boolean expression evaluates to true or false, using the following format: `condition ? consequent : alternative`
+The condition expression must evaluate to true or false. If condition evaluates to true, the consequent expression is evaluated, and its result becomes the result of the operation. If condition evaluates to false, the alternative expression is evaluated, and its result becomes the result of the operation. 
+For example, this code snippet returns `12`
+```c#
+int x = 12;
+Boolean condition = x == 12;
+x = condition ? 13 : 12;
+Console.WriteLine(x);
+```
+
+
