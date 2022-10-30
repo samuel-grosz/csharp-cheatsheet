@@ -1,7 +1,7 @@
 # C# Cheatsheet
-Sources used:
-<a href="https://www.w3schools.com/">w3schools</a>
-<a href="https://learn.microsoft.com/en-us/dotnet/csharp/">Microsoft C# Documentation</a>
+Sources used:  
+<a href="https://www.w3schools.com/">w3schools</a>   
+<a href="https://learn.microsoft.com/en-us/dotnet/csharp/">Microsoft C# Documentation</a>  
 ## Comments
 To ensure readability of code, use the following syntax
 ```c#
