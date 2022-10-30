@@ -34,8 +34,32 @@ Console.WriteLine(list.Count()); //Prints the number of entries in the list, to 
 Console.WriteLine(list.Sum()); //Prints the sum of a list to the command line
 Console.WriteLine(list.IndexOf(12)); //Prints the index of the entry '12' to the command line. -1 is returned if no entry is found.
 list.Sort(); // Sorts the list, either alphabetically in the case of strings, or in order of magnitude from smallest to greatest, in the case of numerical values.
-
 ```
+### Strings
+```c#
+string s = "Hello World"; //Strings use double quotes
+s.ToUpper(); // Makes the string Uppercase
+s.ToLower(); // Makes the string Lowercase
+
+foreach (char c in s) //Iterates through the characters in the string in char format (as unsigned 8-bit integers)
+    Console.WriteLine(c);
+
+// The $ special character identifies a string literal as an interpolated string.
+// When an interpolated string is resolved to a result string, items with interpolation expressions are replaced by the string representations of the expression results.
+Console.WriteLine($"The string is {s}");
+
+// StringBuilder
+
+StringBuilder myString = new StringBuilder("Hello World");
+```
+**StringBuilder**
+**Method name** | Use
+--- | ---
+`StringBuilder.Append` | Appends information to the end of the current StringBuilder.
+`StringBuilder.AppendFormat` | Replaces a format specifier passed in a string with formatted text.
+`StringBuilder.Insert` | Inserts a string or object into the specified index of the current StringBuilder.
+`StringBuilder.Remove` | Removes a specified number of characters from the current StringBuilder.
+`StringBuilder.Replace` | Replaces all occurrences of a specified character or string in the current StringBuilder with another specified character or string.
 
 ### Conversion/Parsing
 The Convert function can be used to convert variables to different types, shown below to convert a variable to a 16-bit integer, however the Int16 can be replaced with a variety of formats.
@@ -105,5 +129,24 @@ Boolean condition = x == 12;
 x = condition ? 13 : 12;
 Console.WriteLine(x);
 ```
+## Switch Statements
+```c#
+switch(expression) 
+{
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+    break;
+}
+```
+Explanation: 
+The switch expression is evaluated once.
+The value of the expression is compared with the values of each case.
+If there is a match, the associated block of code is executed.
 
 
