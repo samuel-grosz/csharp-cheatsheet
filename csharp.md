@@ -49,8 +49,8 @@ foreach (char c in s) //Iterates through the characters in the string in char fo
 Console.WriteLine($"The string is {s}");
 
 // StringBuilder
-
-StringBuilder myString = new StringBuilder("Hello World");
+using System.Text;
+StringBuilder myString = new StringBuilder("Hello World!", 25);
 ```
 **StringBuilder**
 **Method name** | Use
