@@ -14,7 +14,6 @@ using System.Linq;
 ```
 
 ## Types and Conversion/Parsing
-### Types
 **Data Type** | **Size** | **Description** 
 --- | --- | ---
 int | 4 bytes | Stores whole numbers from -2,147,483,648 to 2,147,483,647
@@ -25,7 +24,7 @@ bool | 1 bit | Stores true or false values
 char | 2 bytes | Stores a single character/letter, surrounded by single quotes
 string | 2 bytes per char | Stores a sequence of characters, surrounded by double quotes
 
-## Lists
+### Lists
 ```c#
 using System.Collections.Generic; // Imports the package needed for lists to function
 var list = new List<int>(); // Generates an empty list of integers
@@ -77,7 +76,7 @@ if (a^b) return true; // a xor b
 if (a==b) return true; // a equals b
 if (a!=b) return true; // a not equals b
 ```
-# Loops 
+## Loops 
 
 'while' loops executes a piece of code repeatedly whilst a statement is true.
 ```c#
@@ -96,7 +95,7 @@ var list = new List<int> {1,2,3,4,5};
 foreach(int a in list) { Console.WriteLine(a); }
 ```
 
-# ?: - The ternary conditional operator
+## ?: - The ternary conditional operator
 The operator evaluates a Boolean expression and returns the result of one of the two expressions, depending on whether the Boolean expression evaluates to true or false, using the following format: `condition ? consequent : alternative`
 The condition expression must evaluate to true or false. If condition evaluates to true, the consequent expression is evaluated, and its result becomes the result of the operation. If condition evaluates to false, the alternative expression is evaluated, and its result becomes the result of the operation. 
 For example, this code snippet returns `12`
