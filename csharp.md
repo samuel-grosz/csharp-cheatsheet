@@ -8,6 +8,10 @@ To ensure readability of code, use the following syntax
 On the topic of readability - it is advised that camel case is used when defining functions
 
 ## 'using'
+'using' is used to import packages such as Linq or IO for use in programs. It is used as such
+```c#
+using System.Linq;
+```
 
 ## Types and Conversion/Parsing
 ### Types
@@ -21,8 +25,21 @@ bool | 1 bit | Stores true or false values
 char | 2 bytes | Stores a single character/letter, surrounded by single quotes
 string | 2 bytes per char | Stores a sequence of characters, surrounded by double quotes
 
+## Lists
+```c#
+using System.Collections.Generic; // Imports the package needed for lists to function
+var list = new List<int>(); // Generates an empty list of integers
+list.Add(12); // Adds the integer '12' to the list
+Console.WriteLine(list[0]); // Prints index 0 of the lest to the console - in this case this returns 12, to the command line
+Console.WriteLine(list.Count()); //Prints the number of entries in the list, to the command line
+Console.WriteLine(list.Sum()); //Prints the sum of a list to the command line
+Console.WriteLine(list.IndexOf(12)); //Prints the index of the entry '12' to the command line. -1 is returned if no entry is found.
+list.Sort(); // Sorts the list, either alphabetically in the case of strings, or in order of magnitude from smallest to greatest, in the case of numerical values.
+
+```
+
 ### Conversion/Parsing
-The Convert function can be used to convert variables to different types, shown below to convert a variable to a 16-bit integer.
+The Convert function can be used to convert variables to different types, shown below to convert a variable to a 16-bit integer, however the Int16 can be replaced with a variety of formats.
 ```c#
 int x = Convert.ToInt16(variable);
 ```
@@ -73,5 +90,10 @@ for (statement 1; statement 2; statement 3)
   // code block to be executed
 }
 ```
+'foreach' loops iterate through lists or arrays, and are used in the following format
+```c#
+var list = new List<int> {1,2,3,4,5};
+foreach(int a in list) { Console.WriteLine(a); }
+```
 
-
+# The Conditional/Tertiary Operator
