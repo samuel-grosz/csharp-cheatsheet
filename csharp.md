@@ -82,7 +82,6 @@ String is a numeric representation: True
 ```
 
 ## Functions
-
 Functions take the following format:
 ```c#
 static int add(int x, int y)
@@ -92,6 +91,18 @@ static int add(int x, int y)
 ```
 Unlike Python, C# requires that functions state their output format - void must be used if there is no output returned, and data types (Integer, Decimal, Double, etc) must be specified at the start of a function.
 
+## If statements
+If statements take the following format:
+```c#
+if(case)
+{
+    // Desired output
+}
+else
+{
+    //Desired output
+}
+```
 ## Logical operators
 ```c#
 if (a||b) return true; // a or b
