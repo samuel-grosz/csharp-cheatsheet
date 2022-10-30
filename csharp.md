@@ -29,9 +29,21 @@ String is a numeric representation: True
 
 ## Functions
 
-Unlike Python, C# requires that functions state their output format - void must be used if there is no output returned, and data types (Integer, Decimal, Double, etc) must be specified at the start of a function - in the following format
+Functions take the following format:
 ```c#
 static int add(int x, int y)
-  {
+{
     return x + y;
-  }
+}
+```
+Unlike Python, C# requires that functions state their output format - void must be used if there is no output returned, and data types (Integer, Decimal, Double, etc) must be specified at the start of a function.
+
+## Logical operators
+```c#
+if (a||b) return true; // a or b
+if (a&&b) return true; // a and b
+if (a^b) return true; // a xor b
+if (a==b) return true; // a equals b
+if (a!=b) return true; // a not equals b
+```
+
