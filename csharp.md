@@ -10,7 +10,7 @@ On the topic of readability - it is advised that camel case is used when definin
 ## 'using'
 
 ## Types and Conversion/Parsing
-###Types
+### Types
 **Data Type** | **Size** | **Description** 
 --- | --- | ---
 int | 4 bytes | Stores whole numbers from -2,147,483,648 to 2,147,483,647
@@ -21,7 +21,7 @@ bool | 1 bit | Stores true or false values
 char | 2 bytes | Stores a single character/letter, surrounded by single quotes
 string | 2 bytes per char | Stores a sequence of characters, surrounded by double quotes
 
-###Conversion/Parsing
+### Conversion/Parsing
 The Convert function can be used to convert variables to different types, shown below to convert a variable to a 16-bit integer.
 ```c#
 int x = Convert.ToInt16(variable);
@@ -60,4 +60,18 @@ if (a^b) return true; // a xor b
 if (a==b) return true; // a equals b
 if (a!=b) return true; // a not equals b
 ```
+# Loops 
+
+'while' loops executes a piece of code repeatedly whilst a statement is true.
+```c#
+while (True) Console.WriteLine("True");
+```
+'for' loops include three statements - the first is executed once, the second defines the condition for the code block, and the third is executed each time the after the code block has been executed. The format is as such
+```c#
+for (statement 1; statement 2; statement 3) 
+{
+  // code block to be executed
+}
+```
+
 
