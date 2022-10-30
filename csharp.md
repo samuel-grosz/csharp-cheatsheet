@@ -8,3 +8,17 @@ The Convert function can be used to convert variables to different types, shown 
 int x = Convert.ToInt16(variable);
 ```
 
+The TryParse function converts string representations of integers to integer format, returning a boolean as to whether or not they can be converted.
+
+Input:
+```c#
+bool res;
+int a;
+string myStr = "12";
+res = int.TryParse(myStr, out a);
+Console.WriteLine("String is a numeric representation: "+res);
+```
+Output:
+```
+String is a numeric representation: True
+```
