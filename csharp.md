@@ -33,5 +33,5 @@ Unlike Python, C# requires that functions state their output format - void must 
 ```c#
 static int add(int x, int y)
   {
-    return (x+y);
+    return x + y;
   }
